@@ -7,11 +7,9 @@ function App() {
   return (
     //Componente BrowserRouter para el manejo de rutas
     <BrowserRouter>
-      //Componente Toaster para notificaciones
-      <Toaster position="top-right" reverseOrder={false} />{
-
-      }
-      //Componente Container para manejo de la pantalla
+      {/*Componente Toaster para notificaciones*/}
+      <Toaster position="top-right" reverseOrder={false} />
+      {/*Componente Container para manejo de la pantalla*/}
       <div className='container mx-auto p-4'>
         <Routes>
           <Route path="/" element={<HotelList />} />
