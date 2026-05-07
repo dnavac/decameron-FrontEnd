@@ -2,7 +2,7 @@ import axios from "axios";
 
 //Api para la comunicación con el backend
 const api = axios.create({
-    baseURL: 'https://decameron-backend-test.laravel.cloud/api',
+    baseURL: import.meta.env.VITE_API_URL,
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
